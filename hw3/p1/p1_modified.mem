@@ -1,0 +1,13 @@
+// .text
+@0000 7108 // ldi r1, 8    label: main    target label: X
+@0001 8201 // ld r2, r1, 0
+@0002 7109 // ldi r1, 9    target label: Z
+@0003 8301 // ld r3, r1, 0
+@0004 7401 // ldi r4, 1
+@0005 1334 // sub r3, r3, r4
+@0006 9131 // st r3, r1, 1
+@0007 f000 // sys 0
+
+// .data
+@0008 fade //     label: X
+@0009 123a //    label: Z
